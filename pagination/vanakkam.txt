@@ -1,0 +1,28 @@
+public interface School(){
+void Student()
+}
+Public Class Subjects implements School{
+public void Student(){
+System.out.println("Test is conducted Yesterday");
+}
+}
+Public Class Education{
+
+private Subjects subjects;
+
+public Education(Subjects subjects){
+   super()
+   this.subjects=subjects;
+
+}
+}
+@configuration
+public Class Pystem{
+ @Bean
+ public School School(){
+  return new Subjects()
+  }
+@Bean
+public Education Education(){
+    return new Education(School())
+}
