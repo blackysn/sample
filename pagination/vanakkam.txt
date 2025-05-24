@@ -22,7 +22,3 @@ public Class Pystem{
  public School School(){
   return new Subjects()
   }
-@Bean
-public Education Education(){
-    return new Education(School())
-}
