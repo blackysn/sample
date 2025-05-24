@@ -39,7 +39,7 @@ public class PaginationController {
 	}
 	@DeleteMapping("/{id}")
 	public void deletemapping(@PathVariable Long id) {
-		 paginationservice.deletestudent(id1);
+		 paginationservice.deletestudent(id);
 		
 	}
 }
